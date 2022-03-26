@@ -1,0 +1,58 @@
+:root {
+  --Mobile: 375px;
+  --Desktop: 1440px;
+  --size: 28px;
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--Dark-Blue)
+}
+
+.container {
+  height: 50vh;
+  background-color: var(--Grayish-Blue);
+  max-width: var(--Mobile);
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card .card-header {
+  color: var(--Neon-Green);
+  height: 30%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.card .card-body {
+  color: var(--Light-Cyan);
+  font-weight: 800;
+  height:40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Light-Cyan);
+  font-size: var(--size);
+}
